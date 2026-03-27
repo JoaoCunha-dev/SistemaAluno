@@ -6,11 +6,8 @@ public class AlunoGraduacao extends Aluno {
         super(nome, matricula, nota);
     }
 
-    public void verificarAprovacao() {
-        if (getNota() >= 7) {
-            System.out.println("Aprovado (Graduaçao)");
-        } else {
-            System.out.println("Reprovado (Graduaçao)");
-        }
+    @Override
+    public boolean verificarAprovacao() {
+        return getNota() >= 7;
     }
 }

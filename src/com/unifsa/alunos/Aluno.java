@@ -1,6 +1,6 @@
 package com.unifsa.alunos;
 
-public class Aluno {
+public abstract class Aluno {
 
     private String nome;
     private int matricula;
@@ -44,4 +44,6 @@ public class Aluno {
     public void ajustarNota(double novaNota) {
         setNota(novaNota);
     }
+    
+    public abstract boolean verificarAprovacao();
 }
